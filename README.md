@@ -1,20 +1,2 @@
-# JavaApp1-Mar-2023
-KAYNAK GÖSTERMEK KOŞULUYLA HER TÜRLÜ ALINTI YAPILABİLİR
-
-#java
-#programming
-#eclipse 
-#intellij
-#spring
-#springboot
-#stream
-#parallelstream
-#collections
-#jpa
-#hibernate
-#mapstruct
-#retrofit
-#resttemplate
-#postgresql
-#rxjava
-#crudrepository
+# JavaAppCourse
+This repo shows my studies of Java Applications Course. This course given by Oguz Karan. You can reach original repo from here oguz karan/Java App1-Mar-2023.
