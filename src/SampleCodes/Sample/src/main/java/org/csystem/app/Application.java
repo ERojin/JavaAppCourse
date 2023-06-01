@@ -8,7 +8,7 @@ class Application {
     }
 }
 class Sample {
-    public static void foo(int n )
+    public static void foo(int n)
     {
         Console.writeLine("Giriş:%d", n);
 
