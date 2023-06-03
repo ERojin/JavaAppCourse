@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="MathLib" />
         <module name="org-csystem-math" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="GenericApp" options="-parameters" />
       <module name="GenericLib" options="-parameters" />
+      <module name="MathLib" options="-parameters" />
       <module name="org-csystem-math" options="-parameters" />
     </option>
   </component>
