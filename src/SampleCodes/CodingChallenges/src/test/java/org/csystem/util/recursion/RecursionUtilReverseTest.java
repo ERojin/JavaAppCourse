@@ -10,21 +10,21 @@ import java.util.Collection;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class RecursionUtilFactorialTest {
+public class RecursionUtilReverseTest {
     private final ResultInfo m_resultInfo;
 
     private static class ResultInfo{
-        int n;
-        long expected;
+        String str;
+        String expected;
 
-        public ResultInfo(int n, long expected)
+        public ResultInfo(String str, String expected)
         {
-            this.n = n;
+            this.str = str;
             this.expected = expected;
         }
     }
 
-    public RecursionUtilFactorialTest(ResultInfo resultInfo)
+    public RecursionUtilReverseTest(ResultInfo resultInfo)
     {
         m_resultInfo = resultInfo;
     }
@@ -32,16 +32,15 @@ public class RecursionUtilFactorialTest {
     @Parameterized.Parameters
     public static Collection<ResultInfo> createResultInfo()
     {
-        return Arrays.asList(new ResultInfo(0,1),
-                new ResultInfo(1,1),
-                new ResultInfo(4,24),
-                new ResultInfo(5,120),
-                new ResultInfo(6,720));
+        return Arrays.asList(new ResultInfo("ankara","arakna"),
+                new ResultInfo("istanbul","lubnatsi"),
+                new ResultInfo("csd","dsc"),
+                new ResultInfo("alipapila","alipapila"));
     }
 
     @Test
-    public void givenValue_thenReturnsFactorial()
+    public void givenValue_thenReturnReversed()
     {
-        assertEquals(m_resultInfo.expected, RecursionUtil.factorial(m_resultInfo.n));
+        assertEquals(m_resultInfo.str, RecursionUtil.reverse(m_resultInfo.expected));
     }
 }
