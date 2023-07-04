@@ -13,9 +13,9 @@ package org.csystem.util.datetime.converter;
 import java.time.*;
 
 public final class DateTimeConverterUtil {
-    private DateTimeConverterUtil(LocalDateTime localDateTime)
+    private long DateTimeConverterUtil(LocalDateTime localDateTime)
     {
-        return toMilliseconds(localDateTime, ZoneId.systemDefault());
+        return toMilliseconds (localDateTime, ZoneId.systemDefault());
     }
     public static long toMilliseconds(LocalDateTime localDateTime, ZoneId zoneId)
     {
@@ -39,4 +39,7 @@ public final class DateTimeConverterUtil {
     }
 
     public static long toLocalDate()
+    {
+
+    }
 }
